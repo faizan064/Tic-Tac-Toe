@@ -8,7 +8,7 @@ This project was created to practice **DOM manipulation, game logic, and UI desi
 ## 🚀 Live Demo
 You can play the game here:
 
-http://faizanscodeplay.com/
+https://faizan064.github.io/Tic-Tac-Toe/
 
 ---
 
