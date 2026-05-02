@@ -3,27 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tic tac toe</title>
+    <title>Tic Tac Toe Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="win" class="msgbox">
-        <p id="msg">Winner</p>
-        <button id="new-bn">New Game</button>
+
+<h1>Tic Tac Toe</h1>
+
+<div id="controls">
+    <label>Difficulty:</label>
+    <select id="level">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+</div>
+
+<div id="container">
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+    <button class="box"></button>
+</div>
+
+<button id="reset">Reset Game</button>
+
+<!-- Popup -->
+<div id="win">
+    <div class="popup">
+        <p id="msg"></p>
+        <button id="newBtn">New Game</button>
     </div>
-    <h1>Tic Tac Toe</h1>
-    <div id="container">
-        <button class="bn" id="b1"></button>
-        <button class="bn" id="b2"></button>
-        <button class="bn" id="b3"></button>
-        <button class="bn" id="b4"></button>
-        <button class="bn" id="b5"></button>
-        <button class="bn" id="b6"></button>
-        <button class="bn" id="b7"></button>
-        <button class="bn" id="b8"></button>
-        <button class="bn" id="b9"></button>
-    </div>
-    <button id="reset">Reset game</button>
-    <script src="file.js"></script>
+</div>
+
+<!-- Sounds -->
+<audio id="clickSound" src="click.mp3"></audio>
+<audio id="winSound" src="win.mp3"></audio>
+<audio id="drawSound" src="draw.mp3"></audio>
+
+<script src="file.js"></script>
 </body>
 </html>
